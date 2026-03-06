@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+client/dist/
+client/build_out.txt
+client/buildlog.txt
+
+# Environment files — DO NOT COMMIT
+server/.env
+client/.env
+client/.env.local
+client/.env.production
+
+# Uploads
+server/uploads/*
+!server/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

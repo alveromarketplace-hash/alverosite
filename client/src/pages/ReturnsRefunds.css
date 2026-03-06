@@ -1,0 +1,379 @@
+.returns-page {
+    min-height: 100vh;
+    background: var(--color-off-white, #f7f8f3);
+}
+
+.returns-hero {
+    background: var(--color-black, #000);
+    color: var(--color-white, #fff);
+    padding: 120px 40px 80px;
+    text-align: center;
+}
+
+.returns-hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.returns-hero p {
+    font-size: 1rem;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+}
+
+.returns-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+}
+
+.returns-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Highlight Section */
+.returns-highlight {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.highlight-item {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.highlight-icon {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.highlight-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Sections */
+.returns-section {
+    margin-bottom: 50px;
+}
+
+.returns-section h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+}
+
+.returns-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Policy Blocks */
+.policy-block {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.policy-block h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.policy-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policy-block ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.policy-block ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+}
+
+/* Return Steps */
+.return-steps {
+    margin-top: 30px;
+}
+
+.return-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.return-step:last-child {
+    border-bottom: none;
+}
+
+.return-step .step-number {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.return-step .step-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.return-step .step-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+.return-step .step-content a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Refund Methods */
+.refund-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.refund-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.refund-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.refund-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.refund-time {
+    font-weight: 600;
+    color: #000 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Exchange Info */
+.exchange-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.exchange-block {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.exchange-block h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.exchange-block p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Damage List */
+.damage-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.damage-list li {
+    padding: 18px 25px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    color: #444;
+    position: relative;
+    padding-left: 50px;
+}
+
+.damage-list li:last-child {
+    border-bottom: none;
+}
+
+.damage-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* International Info */
+.international-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.international-info .note {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Contact Section */
+.returns-contact {
+    margin-top: 60px;
+    padding: 40px;
+    background: #000;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.returns-contact h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.returns-contact p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.returns-contact .contact-info {
+    margin-top: 25px;
+}
+
+.returns-contact .contact-info p {
+    margin-bottom: 8px;
+}
+
+.returns-contact .contact-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.returns-contact .contact-info a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .highlight-grid,
+    .refund-methods,
+    .exchange-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .returns-hero {
+        padding: 100px 20px 60px;
+    }
+
+    .returns-hero h1 {
+        font-size: 2rem;
+    }
+
+    .returns-content {
+        padding: 40px 20px 80px;
+    }
+
+    .returns-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .return-step {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .return-step .step-number {
+        margin: 0 auto;
+    }
+
+    .policy-block,
+    .refund-card,
+    .exchange-block {
+        padding: 20px;
+    }
+
+    .returns-contact {
+        padding: 30px 20px;
+    }
+}

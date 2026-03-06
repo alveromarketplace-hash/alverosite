@@ -1,0 +1,384 @@
+.size-guide-page {
+    min-height: 100vh;
+    background: var(--color-off-white, #f7f8f3);
+}
+
+.size-guide-hero {
+    background: var(--color-black, #000);
+    color: var(--color-white, #fff);
+    padding: 120px 40px 80px;
+    text-align: center;
+}
+
+.size-guide-hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.size-guide-hero p {
+    font-size: 1rem;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+}
+
+.size-guide-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+}
+
+.size-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Controls */
+.size-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.category-tab {
+    padding: 12px 30px;
+    background: #fff;
+    border: 2px solid #e5e5e5;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.category-tab:hover {
+    border-color: #000;
+}
+
+.category-tab.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.unit-toggle {
+    display: flex;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+}
+
+.unit-btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.unit-btn.active {
+    background: #000;
+    color: #fff;
+}
+
+/* Type Tabs */
+.type-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.type-tab {
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 25px;
+}
+
+.type-tab:hover {
+    border-color: #000;
+}
+
+.type-tab.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Size Table */
+.size-table-section {
+    margin-bottom: 60px;
+}
+
+.size-table-wrapper {
+    overflow-x: auto;
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.size-table th,
+.size-table td {
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.size-table th {
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+.size-table td {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.size-table td.size-cell {
+    font-weight: 700;
+    background: #f8f8f8;
+}
+
+.size-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.size-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Measurement Guide */
+.measurement-guide {
+    margin-bottom: 60px;
+}
+
+.measurement-guide h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.guide-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.measurement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.measurement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.measurement-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.measurement-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.measurement-content p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Fit Tips */
+.fit-tips {
+    margin-bottom: 60px;
+}
+
+.fit-tips h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tip-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.tip-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.tip-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Size Help */
+.size-help {
+    text-align: center;
+    background: #000;
+    padding: 50px 40px;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.size-help h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.size-help p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.help-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.help-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.help-btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .size-guide-hero {
+        padding: 100px 20px 60px;
+    }
+
+    .size-guide-hero h1 {
+        font-size: 2rem;
+    }
+
+    .size-guide-content {
+        padding: 40px 20px 80px;
+    }
+
+    .size-controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .category-tabs {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .category-tab {
+        flex: 1;
+        text-align: center;
+        padding: 12px 15px;
+    }
+
+    .type-tabs {
+        justify-content: center;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 12px 10px;
+        font-size: 0.8rem;
+    }
+
+    .measurement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .size-help {
+        padding: 40px 25px;
+    }
+
+    .help-options {
+        flex-direction: column;
+    }
+
+    .help-btn {
+        justify-content: center;
+    }
+}

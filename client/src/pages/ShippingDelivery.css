@@ -1,0 +1,383 @@
+.shipping-page {
+    min-height: 100vh;
+    background: var(--color-off-white, #f7f8f3);
+}
+
+.shipping-hero {
+    background: var(--color-black, #000);
+    color: var(--color-white, #fff);
+    padding: 120px 40px 80px;
+    text-align: center;
+}
+
+.shipping-hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.shipping-hero p {
+    font-size: 1rem;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+}
+
+.shipping-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+}
+
+.shipping-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.shipping-section {
+    margin-bottom: 60px;
+}
+
+.shipping-section h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+}
+
+.shipping-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Shipping Methods Cards */
+.shipping-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.method-card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.method-card.featured {
+    border: 2px solid #000;
+    background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
+}
+
+.method-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 20px;
+}
+
+.method-icon {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.method-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.method-time {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.method-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.method-note {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Delivery Table */
+.delivery-table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.delivery-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.delivery-table th,
+.delivery-table td {
+    padding: 18px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.delivery-table th {
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.delivery-table td {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.delivery-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.delivery-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* International Grid */
+.international-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.region-block {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.region-block h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.region-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.region-block ul li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #444;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.region-block ul li:last-child {
+    border-bottom: none;
+}
+
+.region-price {
+    font-weight: 600;
+    color: #000;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+/* Tracking Steps */
+.tracking-steps {
+    margin-top: 30px;
+}
+
+.tracking-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tracking-step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+/* FAQ Items */
+.faq-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.faq-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Note */
+.note {
+    font-style: italic;
+    color: #666;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #000;
+}
+
+/* Contact Section */
+.shipping-contact {
+    margin-top: 60px;
+    padding: 40px;
+    background: #000;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.shipping-contact h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.shipping-contact p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.shipping-contact .contact-info {
+    margin-top: 25px;
+}
+
+.shipping-contact .contact-info p {
+    margin-bottom: 8px;
+}
+
+.shipping-contact .contact-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.shipping-contact .contact-info a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .shipping-methods,
+    .international-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .shipping-hero {
+        padding: 100px 20px 60px;
+    }
+
+    .shipping-hero h1 {
+        font-size: 2rem;
+    }
+
+    .shipping-content {
+        padding: 40px 20px 80px;
+    }
+
+    .shipping-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .tracking-step {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .step-number {
+        margin: 0 auto;
+    }
+
+    .delivery-table th,
+    .delivery-table td {
+        padding: 12px 10px;
+        font-size: 0.85rem;
+    }
+
+    .shipping-contact {
+        padding: 30px 20px;
+    }
+}

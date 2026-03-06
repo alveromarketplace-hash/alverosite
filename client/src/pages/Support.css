@@ -1,0 +1,115 @@
+.support-page {
+    padding: 120px 20px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+.support-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.support-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.support-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-form-section {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contact-form-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group-support {
+    margin-bottom: 20px;
+}
+
+.form-group-support label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-input-support,
+.form-textarea-support {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-textarea-support {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-ticket-btn {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-ticket-btn:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+}
