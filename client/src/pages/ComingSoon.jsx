@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
 import './ComingSoon.css';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+
 const ComingSoon = () => {
     const [email, setEmail] = useState('');
     const [loading, setLoading] = useState(false);
@@ -14,7 +16,7 @@ const ComingSoon = () => {
         setError('');
         setLoading(true);
         try {
-            const res = await fetch('/api/subscribers', {
+            const res = await fetch(`${API_URL}/subscribers`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email }),
