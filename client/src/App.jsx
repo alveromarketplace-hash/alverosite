@@ -14,7 +14,7 @@ const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsConditions = lazy(() => import('./pages/TermsConditions'));
 const ShippingDelivery = lazy(() => import('./pages/ShippingDelivery'));
 const ReturnsRefunds = lazy(() => import('./pages/ReturnsRefunds'));
-const SizeGuide = lazy(() => import('./pages/SizeGuide'));
+
 const Support = lazy(() => import('./pages/Support'));
 const ComingSoon = lazy(() => import('./pages/ComingSoon'));
 const ThankYou = lazy(() => import('./pages/ThankYou'));
@@ -44,7 +44,7 @@ function AppContent() {
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/shipping" element={<ShippingDelivery />} />
           <Route path="/returns" element={<ReturnsRefunds />} />
-          <Route path="/size-guide" element={<SizeGuide />} />
+
           <Route path="/support" element={<Support />} />
           {/* Coming soon routes */}
           <Route path="/products" element={<ComingSoon />} />
