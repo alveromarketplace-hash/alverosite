@@ -59,6 +59,7 @@ const Footer = () => {
                             <li><Link to="/products?gender=men">Men</Link></li>
                             <li><Link to="/products?gender=women">Women</Link></li>
                             <li><Link to="/about">Our Story</Link></li>
+                            <li><Link to="/become-vendor">Become a Vendor</Link></li>
                         </ul>
                     </AnimatedSection>
 

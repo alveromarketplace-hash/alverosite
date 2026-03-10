@@ -81,6 +81,19 @@
     opacity: 0.7;
 }
 
+.header__nav-btn {
+    border: 1px solid var(--color-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 2px;
+    transition: all var(--transition-fast);
+}
+
+.header__nav-btn:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+    opacity: 1;
+}
+
 /* Icon Buttons */
 .header__icon-btn {
     display: flex;

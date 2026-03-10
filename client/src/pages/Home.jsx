@@ -218,7 +218,7 @@ const Home = () => {
                     ))}
                 </div>
                 <div className="home__designer-houses-footer">
-                    <Link to="/design-house" className="home__design-house-btn">DESIGN HOUSE</Link>
+                    <Link to="/become-vendor" className="home__design-house-btn">BECOME A VENDOR</Link>
                 </div>
             </AnimatedSection>
 

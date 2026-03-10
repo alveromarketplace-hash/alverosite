@@ -8,6 +8,7 @@ import rateLimit from 'express-rate-limit';
 import contactRoutes from './routes/contact.js';
 import productRoutes from './routes/products.js';
 import subscriberRoutes from './routes/subscribers.js';
+import vendorRoutes from './routes/vendors.js';
 
 dotenv.config();
 
@@ -42,6 +43,7 @@ mongoose.connect(MONGODB_URI, { serverSelectionTimeoutMS: 5000 })
 app.use('/api/contact', contactRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/subscribers', subscriberRoutes);
+app.use('/api/vendors', vendorRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

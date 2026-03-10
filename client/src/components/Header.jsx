@@ -41,6 +41,7 @@ const Header = () => {
                     <nav className="header__nav header__nav--right">
                         <Link to="/about" className="header__nav-link">Our Story</Link>
                         <Link to="/contact" className="header__nav-link">Contact</Link>
+                        <Link to="/become-vendor" className="header__nav-link header__nav-btn">Become a Vendor</Link>
                     </nav>
 
                     {/* Mobile Menu Toggle */}
@@ -62,6 +63,7 @@ const Header = () => {
                         <Link to="/about" onClick={close}>Our Story</Link>
                         <Link to="/contact" onClick={close}>Contact</Link>
                         <Link to="/faq" onClick={close}>FAQ</Link>
+                        <Link to="/become-vendor" onClick={close}>Become a Vendor</Link>
                     </nav>
                 </div>
             </header>
